@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        'kumbh': ['Kumbh-sans', 'sans-serif']
+      },
       colors: {
         'orange': "hsl(26, 100%, 55%)",
         "pale-orange": "hsl(25, 100%, 94%)",

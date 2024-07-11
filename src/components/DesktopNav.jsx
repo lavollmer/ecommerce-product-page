@@ -5,7 +5,7 @@ import avatar from "../assets/image-avatar.png"; // Import avatar from assets fo
 
 const DesktopNav = () => {
   return (
-    <div className="fixed top-0 left-0 w-full right-0">
+    <div className="fixed top-0 left-0 w-full font-kumbh">
       <div className="flex flex-row justify-evenly items-center">
         <div className="mt-10 ml-10">
           <img src={logo} alt="logo" />
@@ -13,14 +13,15 @@ const DesktopNav = () => {
 
         <div>
           <ul className="flex flex-row items-center justify-center space-x-10 mt-10 ml-10">
-            <li>Collections</li>
+            <li className=" border-b border-transparent hover:border-orange transition-colors duration-300 inline-block">
+              Collections
+            </li>
             <li>Men</li>
             <li>Women</li>
             <li>About</li>
             <li>Contact</li>
           </ul>
         </div>
-
         <div className="flex flex-row items-center mt-10 ml-10 space-x-6">
           <img src={cart} alt="cart icon" />
           <img src={avatar} alt="avatar" className="h-10 w-10" />

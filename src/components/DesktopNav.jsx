@@ -12,14 +12,14 @@ const DesktopNav = () => {
         </div>
 
         <div>
-          <ul className="flex flex-row items-center justify-center space-x-10 mt-10 ml-10">
-            <li className=" border-b border-transparent hover:border-orange transition-colors duration-300 inline-block">
+          <ul className="flex flex-row w-h  items-center justify-center space-x-10 mt-10 ml-10">
+            <li className="border-b border-transparent hover:border-orange transition-colors duration-300 inline-block">
               Collections
             </li>
-            <li>Men</li>
-            <li>Women</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li className="border-b border-transparent hover:border-orange transition-colors duration-300 inline-block">Men</li>
+            <li className="border-b border-transparent hover:border-orange transition-colors duration-300 inline-block">Women</li>
+            <li className="border-b border-transparent hover:border-orange transition-colors duration-300 inline-block">About</li>
+            <li className="border-b border-transparent hover:border-orange transition-colors duration-300 inline-block">Contact</li>
           </ul>
         </div>
         <div className="flex flex-row items-center mt-10 ml-10 space-x-6">

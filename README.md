@@ -59,6 +59,8 @@ Users should be able to:
 ### Useful resources
 
 - [Google Fonts](https://fonts.google.com/specimen/Kumbh+Sans) 
+- [ React Icons Installation] (https://www.npmjs.com/package/react-icons)
+- [React icons page] (https://react-icons.github.io/react-icons/)
 
 
 ## Author

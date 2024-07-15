@@ -9,6 +9,7 @@ import iconClose from "../assets/icon-close.svg";
 const CarouselImages = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPoppedOut, setIsPoppedOut] = useState(false);
+  const [showCarousel, setShowCarousel] = useState(true);
 
   const images = [
     ImageProductOne,
@@ -32,41 +33,45 @@ const CarouselImages = () => {
   };
 
   const closeCarousel = () => {
-    setIsPoppedOut(false);
+    setShowCarousel(false);
   };
+
+  if (!showCarousel) {
+    return null;
+  }
 
   return (
     <div className="fixed top-0 right-0 bottom-0 left-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
       <div className="relative flex items-center justify-center space-x-4 rounded-lg">
-      <img
-        src={iconClose}
-        alt="close icon"
-        className="absolute top-0 right-0 text-orange cursor-pointer z-50"
-        onClick={closeCarousel}
-        style={{ width: '24px', height: '24px' }}
-      />
-      <div className="flex items-center justify-center space-x-4 rounded-lg">
-        <button
-          onClick={goToPrev}
-          className="p-2 bg-white rounded-full hover:bg-white hover:text-orange0"
-        >
-          &lt;
-        </button>
         <img
-          src={images[currentIndex]}
-          alt="carousel images"
-          onClick={togglePopOut}
-          className={`transition-transform ${
-            isPoppedOut ? "scale-150" : "scale-100"
-          }`}
-          style={{ maxWidth: "90%", maxHeight: "75vh", borderRadius: "20px" }}
+          src={iconClose}
+          alt="close icon"
+          className="absolute top-0 right-0 text-orange cursor-pointer z-50"
+          onClick={closeCarousel}
+          style={{ width: "24px", height: "24px" }}
         />
-        <button
-          onClick={goToNext}
-          className="p-2 bg-white rounded-full hover:bg-white hover:text-orange"
-        >
-          &gt;
-        </button>
+        <div className="flex items-center justify-center space-x-4 rounded-lg">
+          <button
+            onClick={goToPrev}
+            className="p-2 bg-white rounded-full hover:bg-white hover:text-orange0"
+          >
+            &lt;
+          </button>
+          <img
+            src={images[currentIndex]}
+            alt="carousel images"
+            // onClick={togglePopOut}
+            className={`transition-transform ${
+              isPoppedOut ? "scale-150" : "scale-100"
+            }`}
+            style={{ maxWidth: "90%", maxHeight: "75vh", borderRadius: "20px" }}
+          />
+          <button
+            onClick={goToNext}
+            className="p-2 bg-white rounded-full hover:bg-white hover:text-orange"
+          >
+            &gt;
+          </button>
         </div>
       </div>
     </div>

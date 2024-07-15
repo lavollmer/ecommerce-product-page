@@ -8,10 +8,10 @@ import ThumbnailImageProductThree from "../assets/image-product-3-thumbnail.jpg"
 import ThumbnailImageProductFour from "../assets/image-product-4-thumbnail.jpg";
 
 const MainDesktop = () => {
-  const [showCarousel, setShowCarousel] = useState(false);
+  const [showCarouselMain, setShowCarouselMain] = useState(false);
 
   const handleThumbnailClick = () => {
-    setShowCarousel(true);
+    setShowCarouselMain(true);
   };
 
   return (
@@ -49,7 +49,7 @@ const MainDesktop = () => {
           onClick={handleThumbnailClick}
         />
       </div>
-      {showCarousel && <CarouselImages />}
+      {showCarouselMain && <CarouselImages />}
     </div>
   );
 };

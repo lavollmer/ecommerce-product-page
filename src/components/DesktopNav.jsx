@@ -23,8 +23,8 @@ const DesktopNav = () => {
           </ul>
         </div>
         <div className="flex flex-row items-center mt-10 ml-10 space-x-6">
-          <img src={cart} alt="cart icon" />
-          <img src={avatar} alt="avatar" className="h-10 w-10" />
+          <img src={cart} alt="cart icon" className="cursor-pointer" />
+          <img src={avatar} alt="avatar" className="h-10 w-10 cursor-pointer transition-colors duration-300 border-transparent b-2 hover:border-orange-800" />
         </div>
       </div>
       <hr className="mt-10" />

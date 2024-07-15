@@ -91,26 +91,6 @@ const CarouselImages = () => {
           </div>
         </div>
         <div className="flex flex-row items-center justify-evenly p-10">
-          {/* <img
-            src={ThumbnailImageProductOne}
-            alt="product one"
-            className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
-          />
-          <img
-            src={ThumbnailImageProductTwo}
-            alt="product two"
-            className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
-          />
-          <img
-            src={ThumbnailImageProductThree}
-            alt="product three"
-            className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
-          />
-          <img
-            src={ThumbnailImageProductFour}
-            alt="product four"
-            className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
-          /> */}
           {thumbnailImages.map((thumbnail, index) => (
             <img
               key={index}

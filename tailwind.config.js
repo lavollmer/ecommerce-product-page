@@ -7,7 +7,7 @@ export default {
         kumbh: ["Kumbh-sans", "sans-serif"],
       },
       colors: {
-        orange: "hsl(26, 100%, 55%)",
+        "orange": "hsl(26, 100%, 55%)",
         "pale-orange": "hsl(25, 100%, 94%)",
         "very-dark-blue": "hsl(220, 13%, 13%)",
         "dark-grayish-blue": "hsl(219, 9%, 45%)",

@@ -1,14 +1,27 @@
 import React from "react";
 import { useState } from "react";
 
-const SneakerCounter = ({ count, setCount }) => {
-  //Increment and decrement functions
+const SneakerCounter = ({ onAddToCart }) => {
+
+  // Initialize count state
+  const [count, setCount] = useState(0);
+
+   // Increment function
   const increment = () => {
-    setCount((prevCount) => prevCount + 1);
+    setCount((prevCount) => {
+      const newCount = prevCount + 1;
+      onAddToCart(newCount);
+      return newCount;
+    });
   };
 
+  // Decrement function
   const decrement = () => {
-    setCount((prevCount) => (prevCount > 0 ? prevCount - 1 : 0));
+    setCount((prevCount) => {
+      const newCount = prevCount > 0 ? prevCount - 1 : 0;
+      onAddToCart(newCount);
+      return newCount;
+    });
   };
 
   return (

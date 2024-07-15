@@ -18,6 +18,9 @@ const Text = () => {
         <h3 className="font-bold text-black text-2xl">$125.00</h3>
         <h3 className="flex flex-row items-center justify-center font-bold bg-black rounded-lg text-white px-4">50%</h3>
       </div>
+      <div>
+        <h3 className="text-dark-grayish-blue font-bold line-through">$250.00</h3>
+      </div>
       <div className="flex flew-row items-center space-x-4">
         <SneakerCounter />
         <AddToCart />

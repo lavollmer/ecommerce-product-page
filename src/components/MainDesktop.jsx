@@ -16,22 +16,22 @@ const MainDesktop = () => {
         <img
           src={ImageProductOne}
           alt="product one"
-          className="w-40 h-40 rounded-lg"
+          className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
         />
         <img
           src={ImageProductTwo}
           alt="product two"
-          className="w-40 h-40 rounded-lg"
+          className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
         />
         <img
           src={ImageProductThree}
           alt="product three"
-          className="w-40 h-40 rounded-lg"
+          className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
         />
         <img
           src={ImageProductFour}
           alt="product four"
-          className="w-40 h-40 rounded-lg"
+          className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
         />
       </div>
       {/* <div>

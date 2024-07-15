@@ -7,11 +7,11 @@ const SneakerCounter = () => {
 
   //Increment and decrement functions
   const increment = () => {
-    setCount(count + 1);
+    setCount((prevCount) => prevCount + 1);
   };
 
   const decrement = () => {
-    setCount(count - 1);
+    setCount((prevCount) => (prevCount > 0 ? prevCount - 1 : 0));
   };
 
   return (
@@ -20,16 +20,20 @@ const SneakerCounter = () => {
         <button
           data-action="decrement"
           className="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-1 cursor-pointer outline-none"
+          onClick={decrement}
         >
           <span className="m-auto text-2xl font-thin text-orange">−</span>
         </button>
         <input
           type="number"
           className="outline-none focus:outline-none text-center w-full bg-gray-300 font-semibold text-md hover:text-black focus:text-black md:text-basecursor-default flex items-center"
+          value={count}
+          readOnly
         />
         <button
           data-action="increment"
           className="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer"
+          onClick={increment}
         >
           <span className="m-auto text-2xl font-thin text-orange">+</span>
         </button>

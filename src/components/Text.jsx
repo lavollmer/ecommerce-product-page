@@ -1,5 +1,6 @@
 import React from "react";
 import AddToCart from "./AddToCart";
+import SneakerCounter from "./SneakerCounter"
 
 const Text = () => {
   return (
@@ -17,7 +18,8 @@ const Text = () => {
         <h3 className="font-bold text-black text-2xl">$125.00</h3>
         <h3 className="flex flex-row items-center justify-center font-bold bg-black rounded-lg text-white px-4">50%</h3>
       </div>
-      <div>
+      <div className="flex flew-row items-center">
+        <SneakerCounter />
         <AddToCart />
       </div>
     </div>

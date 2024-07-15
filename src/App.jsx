@@ -10,18 +10,25 @@ import Dropdown from "./components/Dropdown";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [total, setTotal] = useState(0);
+
+  const handleAddToCart = (newCount) => {
+    setCount(newCount);
+    setTotal(125.0 * newCount);
+  };
+
   return (
     <>
       <div className="text-kumbh">
         <DesktopNav />
-        <Dropdown count={count} />
+        <Dropdown count={count} total={total} />
       </div>
       <div className="flex mt-40">
         <MainDesktop />
         <div>
           <Text />
           <div className="flex flex-row items-center p-20 space-x-6">
-            <SneakerCounter count={count} setCount={setCount} />
+            <SneakerCounter onAddToCart={handleAddToCart} />
             <AddToCart />
           </div>
         </div>

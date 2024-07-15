@@ -1,10 +1,10 @@
 import React from "react";
 import sneakersMain from "../assets/image-product-1.jpg";
 import CarouselImages from "./CarouselImages";
-import ImageProductOne from "../assets/image-product-1.jpg";
-import ImageProductTwo from "../assets/image-product-2.jpg";
-import ImageProductThree from "../assets/image-product-3.jpg";
-import ImageProductFour from "../assets/image-product-4.jpg";
+import ThumbnailImageProductOne from "../assets/image-product-1-thumbnail.jpg";
+import ThumbnailImageProductTwo from "../assets/image-product-2-thumbnail.jpg";
+import ThumbnailImageProductThree from "../assets/image-product-3-thumbnail.jpg";
+import ThumbnailImageProductFour from "../assets/image-product-4-thumbnail.jpg";
 
 const MainDesktop = () => {
   return (
@@ -14,22 +14,22 @@ const MainDesktop = () => {
       </div>
       <div className="flex flex-row items-center justify-between">
         <img
-          src={ImageProductOne}
+          src={ThumbnailImageProductOne}
           alt="product one"
           className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
         />
         <img
-          src={ImageProductTwo}
+          src={ThumbnailImageProductTwo}
           alt="product two"
           className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
         />
         <img
-          src={ImageProductThree}
+          src={ThumbnailImageProductThree}
           alt="product three"
           className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
         />
         <img
-          src={ImageProductFour}
+          src={ThumbnailImageProductFour}
           alt="product four"
           className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
         />

@@ -9,7 +9,7 @@ const DesktopNav = () => {
   const [showDropdownCart, setShowDropdownCart] = useState(false);
 
   const handleCartClick = () => {
-    setShowDropdownCart(true);
+    setShowDropdownCart(!showDropdownCart);
   };
 
   return (

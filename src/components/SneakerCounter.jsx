@@ -1,9 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
-const SneakerCounter = () => {
-  //Initialize state
-  const [count, setCount] = useState(0);
+const SneakerCounter = ({count, setCount}) => {
+
 
   //Increment and decrement functions
   const increment = () => {

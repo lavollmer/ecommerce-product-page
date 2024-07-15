@@ -1,6 +1,19 @@
 import React from "react";
+import { useState } from "react";
 
 const SneakerCounter = () => {
+  //Initialize state
+  const [count, setCount] = useState(0);
+
+  //Increment and decrement functions
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  const decrement = () => {
+    setCount(count - 1);
+  };
+
   return (
     <div className="custom-number-input h-10 w-32">
       <div className="flex flex-row h-10 w-full rounded-lg relative bg-grayish-blue mt-1">

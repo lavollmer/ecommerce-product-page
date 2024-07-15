@@ -3,6 +3,7 @@ import { useState } from "react";
 import logo from "../assets/logo.svg"; // Import logo from assets folder
 import cart from "../assets/icon-cart.svg"; // Import cart from assets folder
 import avatar from "../assets/image-avatar.png"; // Import avatar from assets folder
+import Dropdown from "./Dropdown";
 
 const DesktopNav = () => {
   const [showDropdownCart, setShowDropdownCart] = useState(false);

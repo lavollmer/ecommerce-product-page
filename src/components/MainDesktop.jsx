@@ -11,7 +11,7 @@ const MainDesktop = () => {
   const [showCarouselMain, setShowCarouselMain] = useState(false);
 
   const handleThumbnailClick = () => {
-    setShowCarouselMain(true);
+    setShowCarouselMain(prevState => !prevState);
   };
 
   return (

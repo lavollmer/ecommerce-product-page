@@ -37,10 +37,11 @@ const CarouselImages = () => {
 
   return (
     <div className="fixed top-0 right-0 bottom-0 left-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+      <div className="relative flex items-center justify-center space-x-4 rounded-lg">
       <img
         src={iconClose}
         alt="close icon"
-        className="absolute top-5 right-5 text-orange cursor-pointer z-50"
+        className="absolute top-0 right-0 text-orange cursor-pointer z-50"
         onClick={closeCarousel}
         style={{ width: '24px', height: '24px' }}
       />
@@ -49,7 +50,7 @@ const CarouselImages = () => {
           onClick={goToPrev}
           className="p-2 bg-white rounded-full hover:bg-white hover:text-orange0"
         >
-          &lt;{" "}
+          &lt;
         </button>
         <img
           src={images[currentIndex]}
@@ -58,7 +59,7 @@ const CarouselImages = () => {
           className={`transition-transform ${
             isPoppedOut ? "scale-150" : "scale-100"
           }`}
-          style={{ maxWidth: "90%", maxHeight: "75vh" }}
+          style={{ maxWidth: "90%", maxHeight: "75vh", borderRadius: "20px" }}
         />
         <button
           onClick={goToNext}
@@ -66,6 +67,7 @@ const CarouselImages = () => {
         >
           &gt;
         </button>
+        </div>
       </div>
     </div>
   );

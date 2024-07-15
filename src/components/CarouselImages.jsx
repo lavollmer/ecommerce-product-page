@@ -11,10 +11,10 @@ const CarouselImages = () => {
     const [isPoppedOut, setIsPoppedOut] = useState(false);
 
     const images =[
-ImageProductOne,
-ImageProductTwo,
-ImageProductThree
-ImageProductFour,
+'ImageProductOne',
+'ImageProductTwo',
+'ImageProductThree'
+, 'ImageProductFour'
     ]
 
     const goToNext = () => {
@@ -30,7 +30,20 @@ ImageProductFour,
     };
 
   return (
-    <div>CarouselImages</div>
+    <div className='flex items-center justify-center space-x-4'>
+        <button onClick={goToPrev}
+        className="p-2 bg-gray-200 rounded-full hover:bg-gray-300">&lt; </button>
+ <img
+        src={images[currentIndex]}
+        alt="carousel"
+        onClick={togglePopOut}
+        className={`transition-transform ${isPoppedOut ? 'scale-150' : 'scale-100'}`}
+        style={{ maxWidth: '90%', maxHeight: '75vh' }}
+      />
+      <button onClick={goToNext} className='p-2 bg-gray-200 rounded-full hvoer:bg-gray-300'>
+      &gt;
+      </button>
+    </div>
   )
 }
 

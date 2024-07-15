@@ -22,6 +22,13 @@ const CarouselImages = () => {
     ImageProductFour,
   ];
 
+  const thumbnailImages = [
+    ThumbnailImageProductOne,
+    ThumbnailImageProductTwo,
+    ThumbnailImageProductThree,
+    ThumbnailImageProductFour,
+  ];
+
   const goToNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
@@ -83,8 +90,8 @@ const CarouselImages = () => {
             </button>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-between">
-          <img
+        <div className="flex flex-row items-center justify-evenly p-10">
+          {/* <img
             src={ThumbnailImageProductOne}
             alt="product one"
             className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
@@ -103,7 +110,16 @@ const CarouselImages = () => {
             src={ThumbnailImageProductFour}
             alt="product four"
             className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
-          />
+          /> */}
+          {thumbnailImages.map((thumbnail, index) => (
+            <img
+              key={index}
+              src={thumbnail}
+              alt={`product ${index + 1}`}
+              className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
+              onClick={() => setCurrentIndex(index)}
+            />
+          ))}
         </div>
       </div>
     </div>

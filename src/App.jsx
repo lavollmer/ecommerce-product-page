@@ -11,6 +11,7 @@ import Dropdown from "./components/Dropdown";
 function App() {
   const [count, setCount] = useState(0);
   const [total, setTotal] = useState(0);
+  const [cartCount,setCartCount] = useState(0);
 
   const handleAddToCart = (newCount) => {
     setCount(newCount);
@@ -29,7 +30,7 @@ function App() {
           <Text />
           <div className="flex flex-row items-center p-20 space-x-6">
             <SneakerCounter onAddToCart={handleAddToCart} />
-            <AddToCart />
+            <AddToCart setCount={setCartCount} />
           </div>
         </div>
       </div>

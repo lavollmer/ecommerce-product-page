@@ -13,14 +13,5 @@ const AddToCart = ({ setCount }) => {
   );
 };
 
-// Define default props in case setCount is not passed
-AddToCart.defaultProps = {
-  setCount: () => console.warn("setCount function is not passed to AddToCart"),
-};
-
-// Define PropTypes
-AddToCart.propTypes = {
-  setCount: PropTypes.func.isRequired, // Ensures setCount is a function and is required
-};
 
 export default AddToCart;

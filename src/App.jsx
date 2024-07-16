@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <div className="text-kumbh">
+      <div className="hidden md:block text-kumbh">
         <DesktopNav />
       </div>
       <div className="flex flex-col md:flex-row mt-10 md:mt-40">

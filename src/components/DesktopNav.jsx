@@ -13,7 +13,7 @@ const DesktopNav = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full font-kumbh">
+    <div className="fixed top-0 left-0 w-full font-kumbh bg-white">
       <div className="flex flex-row justify-evenly items-center">
         <div className="mt-10 ml-10">
           <img src={logo} alt="logo" />
@@ -38,7 +38,7 @@ const DesktopNav = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-row relative items-center mt-10 ml-10 space-x-6">
+        <div className="flex flex-row relative items-center mt-10 ml-10 w-81 space-x-6">
           <img
             src={cart}
             onClick={handleCartClick}
@@ -52,7 +52,7 @@ const DesktopNav = () => {
             className="h-10 w-10 cursor-pointer transition-colors duration-300 border-transparent b-2 hover:border-orange-800"
           />
 
-          {showDropdownCart && <Dropdown className="absolute" />}
+          {showDropdownCart && <Dropdown  />}
         </div>
       </div>
       <hr className="mt-10" />

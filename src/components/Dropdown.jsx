@@ -3,8 +3,9 @@ import { useState } from "react";
 import ThumbnailImageProductOne from "../assets/image-product-1-thumbnail.jpg";
 import iconTrash from "../assets/icon-delete.svg";
 
-const Dropdown = ({ count }) => {
+const Dropdown = ({ count}) => {
   const [total, setTotal] = useState(125.0 * count);
+
 
   return (
     <div className="absolute fixed top-14 left-0 w-81 bg-white shadow-md border border-gray-100">

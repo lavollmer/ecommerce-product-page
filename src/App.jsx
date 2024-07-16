@@ -22,7 +22,6 @@ function App() {
     <>
       <div className="text-kumbh">
         <DesktopNav />
-        <Dropdown count={count} total={total} />
       </div>
       <div className="flex mt-40">
         <MainDesktop />

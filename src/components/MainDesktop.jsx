@@ -15,12 +15,12 @@ const MainDesktop = () => {
   };
 
   return (
-    <div className="flex flex-col p-20 space-y-10">
+    <div className="flex flex-col p-2 md:p-20 space-y-2 md:space-y-10">
       <div className="flex items-center justify-center">
         <img
           src={sneakersMain}
           alt="sneakers image"
-          className="rounded-lg h-100 w-100"
+          className="rounded-lg h-full w-full md:h-100 md:w-100"
         />
       </div>
       <div className="flex flex-row items-center justify-between">

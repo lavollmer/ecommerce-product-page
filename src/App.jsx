@@ -23,11 +23,11 @@ function App() {
       <div className="text-kumbh">
         <DesktopNav />
       </div>
-      <div className="flex mt-40">
+      <div className="flex flex-col md:flex-row mt-10 md:mt-40">
         <MainDesktop />
         <div>
           <Text />
-          <div className="flex flex-row items-center p-20 space-x-6">
+          <div className="flex flex-col md:flex-row items-center p-4 md:p-20 space-y-4 md:space-y-0 md:space-x-6">
             <SneakerCounter onAddToCart={handleAddToCart} />
             <AddToCart setCount={setCartCount} />
           </div>

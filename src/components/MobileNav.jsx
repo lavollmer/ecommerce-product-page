@@ -13,8 +13,8 @@ const DesktopNav = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full font-kumbh bg-white">
-      <div className="flex flex-row justify-evenly items-center">
+    <div className="font-kumbh bg-white">
+      <div className="flex flex-row w-full justify-evenly items-center">
         <div className="mt-10 ml-10">
           <img src={logo} alt="logo" />
         </div>

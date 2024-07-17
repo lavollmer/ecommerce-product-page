@@ -4,6 +4,7 @@ import logo from "../assets/logo.svg"; // Import logo from assets folder
 import cart from "../assets/icon-cart.svg"; // Import cart from assets folder
 import avatar from "../assets/image-avatar.png"; // Import avatar from assets folder
 import Dropdown from "./Dropdown"; // Import Dropdown component
+import menu from "../assets/icon-menu.svg"; // Import Menu from assets folder
 
 const DesktopNav = () => {
   const [showDropdownCart, setShowDropdownCart] = useState(false);

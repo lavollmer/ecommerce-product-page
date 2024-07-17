@@ -4,6 +4,7 @@ import logo from "../assets/logo.svg"; // Import logo from assets folder
 import cart from "../assets/icon-cart.svg"; // Import cart from assets folder
 import avatar from "../assets/image-avatar.png"; // Import avatar from assets folder
 import Dropdown from "./Dropdown"; // Import Dropdown component
+import menu from "../assets/icon-menu.svg"; // Import menu from assets folder
 
 const DesktopNav = () => {
   const [showDropdownCart, setShowDropdownCart] = useState(false);
@@ -15,6 +16,14 @@ const DesktopNav = () => {
   return (
     <div className="font-kumbh bg-white">
       <div className="flex flex-row w-full justify-evenly items-center">
+      <div className="mt-10 ml-10">
+        <img
+            src={menu}
+            alt="menu icon"
+            className="cursor-pointer"
+            style={{ width: "24px", height: "24px" }}
+          />
+        </div>
         <div className="mt-10 ml-10">
           <img src={logo} alt="logo" />
         </div>

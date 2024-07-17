@@ -50,11 +50,9 @@ Mobile Landing Page:
 
 ![Mobile Landing Page Ecommerce](./src/assets/MobileLandingPage_Ecommerce.png)
 
-Mobile Landing Page:
-
 ![Mobile Landing Page Ecommerce Page 2](./src/assets/MobileLandingPage_Ecommerce2.png)
 
-Mobile Landing Page:
+Mobile Landing Page Side Navigation Bar:
 
 ![Mobile Landing Page Ecommerce Side Navigation Bar](./src/assets/MobileLandingPage_EcommerceSidenavBar.png)
 
@@ -68,12 +66,15 @@ Mobile Landing Page:
 
 ### Built with
 
+- [React](https://reactjs.org/) - JS library
+- TailwindCSS
+- Vite
+- Google Fonts
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
 
 
 ### What I learned
@@ -84,12 +85,13 @@ Mobile Landing Page:
 
 ### Useful resources
 
+Resources I used to help build my project or reference:
+
 - [Google Fonts](https://fonts.google.com/specimen/Kumbh+Sans) 
 - [ React Icons Installation] (https://www.npmjs.com/package/react-icons)
 - [React icons page] (https://react-icons.github.io/react-icons/)
 - [TailwindCSS Control Button](https://flowbite.com/docs/forms/number-input/)
 - [Counter Button] (https://tailwindcomponents.com/component/number-input-counter)
-
 
 ## Author
 

@@ -21,10 +21,10 @@ const DesktopNav = () => {
             src={menu}
             alt="menu icon"
             className="cursor-pointer"
-            style={{ width: "24px", height: "24px" }}
+            style={{ width: "16px", height: "16px" }}
           />
         </div>
-        <div className="mt-10 ml-10">
+        <div className="mt-10 ml-6">
           <img src={logo} alt="logo" />
         </div>
         <div className="flex flex-row relative items-center mt-10 ml-10 w-81 space-x-6">

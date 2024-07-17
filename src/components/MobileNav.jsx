@@ -7,7 +7,7 @@ import Dropdown from "./Dropdown"; // Import Dropdown component
 import menu from "../assets/icon-menu.svg"; // Import menu from assets folder
 import iconClose from "../assets/icon-close.svg";
 
-const DesktopNav = ({cartCount}) => {
+const DesktopNav = ({ cartCount }) => {
   const [showDropdownCart, setShowDropdownCart] = useState(false);
   const [isNavVisible, setIsNavVisible] = useState(false);
 
@@ -47,8 +47,7 @@ const DesktopNav = ({cartCount}) => {
             alt="avatar icon"
             className="h-10 w-10 cursor-pointer transition-colors duration-300 border-transparent b-2 hover:border-orange-800"
           />
-
-          {showDropdownCart && <Dropdown cartCount={cartCount} />}
+          <div>{showDropdownCart && <Dropdown cartCount={cartCount}/>}</div>
         </div>
         {/* Side Navigation */}
         <div

@@ -80,7 +80,7 @@ const CarouselImages = () => {
             top: "50%",
             right: "25%",
             transform: "translate(-50%, -50%)",
-            marginRight: "-100px",
+            marginRight: "-75px",
             width: "40px",
             height: "40px",
             borderRadius: "50%",

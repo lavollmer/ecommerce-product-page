@@ -8,6 +8,7 @@ import AddToCart from "./components/AddToCart";
 import SneakerCounter from "./components/SneakerCounter";
 import Dropdown from "./components/Dropdown";
 import MobileNav from "./components/MobileNav.jsx";
+import MobileSneakers from "./components/MobileSneakers.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,7 +28,17 @@ function App() {
       <div className="hidden md:block text-kumbh">
         <DesktopNav />
       </div>
-      <div className="flex flex-col md:flex-row mt-10 md:mt-40">
+      <div>
+        <MobileSneakers />
+        <div>
+          <Text />
+          <div className="flex flex-col md:flex-row items-center p-4 md:p-20 space-y-4 md:space-y-0 md:space-x-6">
+            <SneakerCounter onAddToCart={handleAddToCart} />
+            <AddToCart setCount={setCartCount} />
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col md:flex-row hidden md:block text-kumbh mt-10 md:mt-40 ">
         <MainDesktop />
         <div>
           <Text />

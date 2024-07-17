@@ -7,6 +7,7 @@ import ThumbnailImageProductTwo from "../assets/image-product-2-thumbnail.jpg";
 import ThumbnailImageProductThree from "../assets/image-product-3-thumbnail.jpg";
 import ThumbnailImageProductFour from "../assets/image-product-4-thumbnail.jpg";
 
+
 const MainDesktop = () => {
   const [showCarouselMain, setShowCarouselMain] = useState(false);
 

@@ -46,7 +46,17 @@ const CarouselImages = () => {
         <button
           onClick={goToPrev}
           className="absolute z-50 p-2 bg-white rounded-full hover:bg-white hover:text-orange"
-          style={{ top: "50%", left: "25%", transform: "translate(-50%, -50%)", marginLeft: "-50px" }} // Adjust marginLeft as needed
+          style={{
+            top: "50%",
+            left: "25%",
+            transform: "translate(-50%, -50%)",
+            marginLeft: "-50px",
+            width: "40px",
+            height: "40px",
+            borderRadius: "50%",
+            color: "black",
+            fontWeight: "bold",
+          }}
         >
           &lt;
         </button>
@@ -66,7 +76,17 @@ const CarouselImages = () => {
         <button
           onClick={goToNext}
           className="absolute z-50 p-2 bg-white rounded-full hover:bg-white hover:text-orange"
-          style={{ top: "50%", right: "25%", transform: "translate(-50%, -50%)", marginRight: "-75px" }} 
+          style={{
+            top: "50%",
+            right: "25%",
+            transform: "translate(-50%, -50%)",
+            marginRight: "-75px",
+            width: "40px",
+            height: "40px",
+            borderRadius: "50%",
+            color: "black",
+            fontWeight: "bold",
+          }}
         >
           &gt;
         </button>

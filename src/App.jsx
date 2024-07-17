@@ -25,7 +25,7 @@ function App() {
       <div className="flex flex-row w-full">
         <MobileNav className="w-full" />
       </div>
-      <div className="hidden md:block text-kumbh">
+      <div className="hidden md:block text-kumbh-800">
         <DesktopNav />
       </div>
       <div>

@@ -4,7 +4,7 @@ import cart from "../assets/icon-cart.svg";
 const AddToCart = ({ setCount }) => {
 
   const handleAddToCart = () => {
-    setCount((prevCount) => prevCount + 1); // Increment count
+    setCount(prevCount); // Increment count
   };
 
   return (

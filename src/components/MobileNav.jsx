@@ -20,7 +20,7 @@ const DesktopNav = () => {
   };
 
   return (
-    <div className="font-kumbh bg-white">
+    <div className="flex flex-col z-50 font-kumbh bg-white">
       <div className="flex flex-row w-full justify-evenly items-center">
         <div className="mt-10 ml-10">
           <img
@@ -57,19 +57,22 @@ const DesktopNav = () => {
           } transition-transform duration-300 ease-in-out`}
         >
           <div>
-            <img
-              src={iconClose}
-              alt="close icon"
-              className="absolute top-0 right-0 text-orange cursor-pointer z-50"
-              onClick={toggleNav}
-              style={{ width: "24px", height: "24px" }}
-            />
-            {/* Navigation links or content goes here */}
-            <p>Collections</p>
-            <p>Men</p>
-            <p>Women</p>
-            <p>About</p>
-            <p>Contact</p>
+            <div>
+              <img
+                src={iconClose}
+                alt="close icon"
+                className="absolute top-4 left-4 text-orange cursor-pointer z-50"
+                onClick={toggleNav}
+                style={{ width: "24px", height: "24px" }}
+              />
+            </div>
+            <div className="font-bold font-kumbh mt-20 ml-4 space-y-6 text-dark-grayish-blue">
+              <p>Collections</p>
+              <p>Men</p>
+              <p>Women</p>
+              <p>About</p>
+              <p>Contact</p>
+            </div>
           </div>
         </div>
       </div>

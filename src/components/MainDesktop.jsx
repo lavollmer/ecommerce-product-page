@@ -16,37 +16,37 @@ const MainDesktop = () => {
   };
 
   return (
-    <div className="flex flex-col p-2 md:p-20 space-y-2 md:space-y-10">
-      <div className="flex items-center justify-center">
+    <div className="flex flex-col p-2 md:p-6 space-y-2 md:space-y-4 max-w-lg mx-auto">
+      <div className="flex items-center justify-center md:h-81 md:w-81">
         <img
           src={sneakersMain}
           alt="sneakers image"
-          className="rounded-lg h-full w-full md:h-100 md:w-100"
+          className="rounded-lg h-full w-full"
         />
       </div>
       <div className="flex flex-row items-center justify-between">
         <img
           src={ThumbnailImageProductOne}
           alt="product one"
-          className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
+          className="w-40 h-40 md:w-20 md:h-20 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
           onClick={handleThumbnailClick}
         />
         <img
           src={ThumbnailImageProductTwo}
           alt="product two"
-          className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
+          className="w-40 h-40 md:w-20 md:h-20 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
           onClick={handleThumbnailClick}
         />
         <img
           src={ThumbnailImageProductThree}
           alt="product three"
-          className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
+          className="w-40 h-40 md:w-20 md:h-20 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
           onClick={handleThumbnailClick}
         />
         <img
           src={ThumbnailImageProductFour}
           alt="product four"
-          className="w-40 h-40 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
+          className="w-40 h-40 md:w-20 md:h-20 rounded-lg hover:grayscale transition duration-300 border-2 border-transparent hover:border-orange-800"
           onClick={handleThumbnailClick}
         />
       </div>

@@ -43,10 +43,10 @@ function App() {
             <DesktopNav />
           </div>
           <div className="flex flex-row text-kumbh mt-10 md:mt-40 ">
-            <div>
+            <div className="flex flex-col w-full">
               <MainDesktop />
             </div>
-            <div>
+            <div className="flex flex-col">
               <Text />
               <div className="flex flex-row items-center p-4 md:p-20 space-y-4 md:space-y-0 md:space-x-6">
                 <SneakerCounter onAddToCart={handleAddToCart} />

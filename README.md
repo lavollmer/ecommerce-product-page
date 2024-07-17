@@ -12,7 +12,6 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -64,6 +63,19 @@ Mobile Landing Page Side Navigation Bar:
 
 ## My process
 
+This project began with the initial setup, which included creating a GitHub repository, initializing a Vite project with ReactJS, and integrating TailwindCSS. I configured TailwindCSS to incorporate the project's design specifications, such as fonts and colors. After ensuring the foundational elements were operational through an initial commit, I proceeded to remove the default ReactJS template content to start with a clean slate. I have honed my ability to create a setup quickly for projects to be able to spend time on other elements.
+
+My approach to tackling the project was organized and logical. I started by reviewing the provided design layout and style guide while using my learnings from other projects. This preliminary planning phase helped me strategize the implementation of key features, including hover states, a mobile-responsive layout, and dropdown menu for the cart. The decision to prioritize the desktop layout and navigation set the stage for a structured development process. After creating of a design skeleton for desktop, I wanted to work on the functionality of the counter button, add to cart button and useState between all pieces of the website.
+
+The construction of the desktop layout was the first piece, where I focused on replicating the design's key navigation elements: positioning the logo, adding hover states to text, adding the avatar and cart icons. Afterwards, I worked on creating the desktop text and images in the main section. This phase laid a solid foundation for the user experience.
+
+I initiated development on the count button, add to cart button, and the cart component functionalities. This phase presented challenges as it involved deepening my understanding of useState functionality and props. My first task was to refine the count button, ensuring it accurately responded to both increment (+) and decrement (-) actions. Subsequently, I developed the Add to Cart button, incorporating a cart icon. Integrating these buttons within the application, especially in terms of passing the count data, was particularly challenging. Through this process, I explored various strategies for managing state, from global to local scopes.
+
+Transitioning to the mobile layout, I aimed to maintain consistency with the desktop version while accommodating the nuances of a smaller viewport. Implementing the sidebar required a deeper dive into React's useState hooks for dynamic content display, alongside mastering TailwindCSS for styling. The development of an animated sidebar, triggered by the hamburger icon, involved careful consideration of text styling and the integration of dropdown functionality. This phase was instrumental in enhancing my understanding of state management and UI interactivity.
+
+The final touches to the project involved refining hover states and ensuring compliance with the design requirements. The adjustment of media queries ensured a seamless transition between different device sizes. Deploying the project on Netlify was the culmination of my efforts, providing a live website of my work.
+
+
 ### Built with
 
 - [React](https://reactjs.org/) - JS library
@@ -77,10 +89,15 @@ Mobile Landing Page Side Navigation Bar:
 - Mobile-first workflow
 
 
-### What I learned
-
-
 ### Continued development
+
+Things I would like to work after submission of this project:
+- Styling of carousel arrow buttons in desktop version
+- Orange hightlight for hover states on thumbnails
+- Navigation bar highlights for hover state to be styled differently
+- Avartar hover state to highlight the image orange
+- Adding number of items in cart with small icon about cart image in navigation bar
+- Trash icon functionality in cart
 
 
 ### Useful resources

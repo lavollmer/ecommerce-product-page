@@ -25,24 +25,24 @@ const SneakerCounter = ({ onAddToCart }) => {
   };
 
   return (
-    <div className="custom-number-input h-10 w-32">
-      <div className="flex flex-row h-full w-full md:h-10 w-full rounded-lg relative bg-grayish-blue mt-1">
+    <div className="h-14 md:w-32 w-3/4"> 
+      <div className="flex flex-row h-full w-full md:h-10 w-full rounded-full relative bg-light-grayish-blue mt-1">
         <button
           data-action="decrement"
-          className="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-1 cursor-pointer outline-none"
+          className="bg-light-grayish-blue text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-1 cursor-pointer outline-none"
           onClick={decrement}
         >
           <span className="m-auto text-2xl font-thin text-orange">−</span>
         </button>
         <input
           type="number"
-          className="outline-none focus:outline-none text-center w-full bg-gray-300 font-semibold text-md hover:text-black focus:text-black md:text-basecursor-default flex items-center"
+          className="outline-none focus:outline-none text-center w-full bg-light-grayish-blue font-bold text-lg hover:text-black focus:text-black md:text-basecursor-default flex items-center"
           value={count}
           readOnly
         />
         <button
           data-action="increment"
-          className="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer"
+          className="bg-light-grayish-blue text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer"
           onClick={increment}
         >
           <span className="m-auto text-2xl font-thin text-orange">+</span>

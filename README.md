@@ -2,7 +2,7 @@
 
 This project was aimed at learning about ecommerce product landing pages, functionality and styling based on design.
 
-This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-ecommerce-landing-page-tailwindcss-reactjs-vite-XknmCrVmjT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -58,7 +58,7 @@ Mobile Landing Page Side Navigation Bar:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Laura Dev Solution Frontend Mentor Ecommerce Page](https://www.frontendmentor.io/solutions/responsive-ecommerce-landing-page-tailwindcss-reactjs-vite-XknmCrVmjT)
 - Live Site URL: [Laura Dev Ecommerce Landing Page Netlify](https://ecommercelandingpage-lauradev.netlify.app/)
 
 ## My process

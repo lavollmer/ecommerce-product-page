@@ -43,33 +43,33 @@ const CarouselImages = () => {
   return (
     <div className="relative">
       <div className="relative">
+        <button
+          onClick={goToPrev}
+          className="absolute z-50 p-2 bg-white rounded-full hover:bg-white hover:text-orange"
+          style={{ top: "50%", left: "25%", transform: "translate(-50%, -50%)", marginLeft: "-50px" }} // Adjust marginLeft as needed
+        >
+          &lt;
+        </button>
         <div className="relative">
-          <button
-            onClick={goToPrev}
-            className="absolute z-50 p-2 bg-white rounded-full hover:bg-white hover:text-orange"
-          >
-            &lt;
-          </button>
-          <div className="relative">
-            <img
-              src={images[currentIndex]}
-              alt="carousel images"
-              className={`transition-transform ${
-                isPoppedOut ? "scale-100" : "scale-100"
-              }`}
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-            />
-          </div>
-          <button
-            onClick={goToNext}
-            className="absolute z-50 p-2 bg-white rounded-full hover:bg-white hover:text-orange"
-          >
-            &gt;
-          </button>
+          <img
+            src={images[currentIndex]}
+            alt="carousel images"
+            className={`transition-transform ${
+              isPoppedOut ? "scale-100" : "scale-100"
+            }`}
+            style={{
+              width: "100%",
+              height: "100%",
+            }}
+          />
         </div>
+        <button
+          onClick={goToNext}
+          className="absolute z-50 p-2 bg-white rounded-full hover:bg-white hover:text-orange"
+          style={{ top: "50%", right: "25%", transform: "translate(-50%, -50%)", marginRight: "-75px" }} 
+        >
+          &gt;
+        </button>
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ const DesktopNav = () => {
   };
 
   return (
-    <div className="flex flex-col z-50 font-kumbh bg-white">
+    <div className="flex flex-col z-50 font-kumbh-400 text-lg bg-white">
       <div className="flex flex-row w-full justify-evenly items-center">
         <div className="mt-10 ml-10">
           <img

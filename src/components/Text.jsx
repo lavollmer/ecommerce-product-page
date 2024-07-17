@@ -2,9 +2,9 @@ import React from "react";
 
 const Text = () => {
   return (
-    <div className="flex flex-col flex-start p-4 md:p-20 space-y-6 font-kumbh">
-      <h1 className="text-dark-grayish-blue font-bold">SNEAKER COMPANY</h1>
-      <h2 className="text-black font-bold text-4xl">
+    <div className="flex flex-col flex-start p-4 md:p-20 space-y-4 font-kumbh">
+      <h1 className="text-dark-grayish-blue font-bold font-kumbh text-md">SNEAKER COMPANY</h1>
+      <h2 className="text-black font-bold text-4xl font-kumbh">
         Fall Limited Edition Sneakers
       </h2>
       <h3 className="text-dark-grayish-blue">

@@ -45,7 +45,7 @@ const CarouselImages = () => {
       <div className="relative">
         <button
           onClick={goToPrev}
-          className="absolute z-50 p-2 bg-white rounded-full hover:bg-white hover:text-orange"
+          className="absolute z-40 p-2 bg-white rounded-full hover:bg-white hover:text-orange"
           style={{
             top: "50%",
             left: "25%",
@@ -75,12 +75,12 @@ const CarouselImages = () => {
         </div>
         <button
           onClick={goToNext}
-          className="absolute z-50 p-2 bg-white rounded-full hover:bg-white hover:text-orange"
+          className="absolute z-40 p-2 bg-white rounded-full hover:bg-white hover:text-orange"
           style={{
             top: "50%",
             right: "25%",
             transform: "translate(-50%, -50%)",
-            marginRight: "-75px",
+            marginRight: "-100px",
             width: "40px",
             height: "40px",
             borderRadius: "50%",

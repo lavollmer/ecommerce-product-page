@@ -42,13 +42,15 @@ function App() {
           <div>
             <DesktopNav />
           </div>
-          <div className="flex flex-row text-kumbh mt-10 md:mt-40 ">
+          <div className="flex flex-row text-kumbh mt-40 ">
             <div className="flex flex-col w-full">
               <MainDesktop />
             </div>
-            <div className="flex flex-col">
-              <Text />
-              <div className="flex flex-row items-center p-4 md:p-20 space-y-4 md:space-y-0 md:space-x-6">
+            <div className="flex flex-col w-full">
+              <div className="mt-10 left-0">
+                <Text />
+              </div>
+              <div className="flex flex-row items-center p-4">
                 <SneakerCounter onAddToCart={handleAddToCart} />
                 <AddToCart setCount={setCartCount} />
               </div>

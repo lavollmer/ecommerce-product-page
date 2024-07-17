@@ -2,7 +2,7 @@ import React from "react";
 
 const Text = () => {
   return (
-    <div className="flex flex-col flex-start p-4 md:p-20 space-y-4 font-kumbh">
+    <div className="flex flex-col flex-start pt-4 p-6 space-y-4 font-kumbh">
       <h1 className="text-dark-grayish-blue font-bold font-kumbh text-md">SNEAKER COMPANY</h1>
       <h2 className="text-black font-bold text-4xl font-kumbh">
         Fall Limited Edition Sneakers
@@ -12,7 +12,7 @@ const Text = () => {
         Featuring a durable rubber outer sole, they'll withstand everything the
         weather can offer.
       </h3>
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row md:flex-col justify-between">
         <div className="flex flex-row space-x-4">
           <h3 className="font-bold text-black text-2xl">$125.00</h3>
           <h3 className="flex flex-row items-center justify-center font-bold bg-black rounded-lg text-white px-4">

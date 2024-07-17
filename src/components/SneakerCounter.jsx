@@ -25,8 +25,8 @@ const SneakerCounter = ({ onAddToCart }) => {
   };
 
   return (
-    <div className="h-14 md:w-32 w-3/4"> 
-      <div className="flex flex-row h-full w-full md:h-10 w-full rounded-full relative bg-light-grayish-blue mt-1">
+    <div className="flex md:flex-row h-full w-3/4 md:w-1/2 rounded-full "> 
+      <div className="flex flex-row relative bg-light-grayish-blue mt-1">
         <button
           data-action="decrement"
           className="bg-light-grayish-blue text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-1 cursor-pointer outline-none"

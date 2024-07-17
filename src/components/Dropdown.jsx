@@ -6,6 +6,11 @@ import iconTrash from "../assets/icon-delete.svg";
 const Dropdown = ({ cartCount}) => {
   const [total, setTotal] = useState(125.0 * cartCount);
 
+  const [cartItems, setCartItems] = useState([    ]);
+
+  const clearCart = () => {
+    setCartItems([]);
+  };
 
   return (
     <div className="absolute fixed top-14 left-0 w-full bg-white shadow-md border border-gray-100">
@@ -13,6 +18,7 @@ const Dropdown = ({ cartCount}) => {
         Cart
       </h1>
       <hr />
+      {cartItems.length > 0 ? (
       <div className="flex flex-row items-center space-x-4 m-2">
         <div className="flex flex-col">
           <img
@@ -37,6 +43,11 @@ const Dropdown = ({ cartCount}) => {
           className="h-4 w-3 cursor-pointer"
         />
       </div>
+      ) : (
+        <div className="flex flex-row items-center justify-center p-4">
+          <p className="font-kumbhs text-md text-grayish-blue">Your cart is empty.</p>
+        </div>
+      )}
       <div className="flex flex-col p-6">
         <button className="flex flex-row items-center justify-center bg-orange text-black font-bold text-lg rounded-lg py-2 px-4 w-full">
           Checkout

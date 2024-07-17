@@ -41,16 +41,16 @@ const CarouselImages = () => {
   }
 
   return (
-    <div className="flex flex-col p-10 flex items-center justify-center">
-      <div>
-        <div className="flex items-center justify-center space-x-4 rounded-lg">
-          <div className="flex items-center justify-center space-x-4 rounded-lg">
-            <button
-              onClick={goToPrev}
-              className="p-2 bg-white rounded-full hover:bg-white hover:text-orange0"
-            >
-              &lt;
-            </button>
+    <div className="relative">
+      <div className="relative">
+        <div className="relative">
+          <button
+            onClick={goToPrev}
+            className="absolute z-50 p-2 bg-white rounded-full hover:bg-white hover:text-orange"
+          >
+            &lt;
+          </button>
+          <div className="relative">
             <img
               src={images[currentIndex]}
               alt="carousel images"
@@ -58,18 +58,17 @@ const CarouselImages = () => {
                 isPoppedOut ? "scale-100" : "scale-100"
               }`}
               style={{
-                maxWidth: "90%",
-                maxHeight: "75vh",
-                borderRadius: "20px",
+                width: "100%",
+                height: "100%",
               }}
             />
-            <button
-              onClick={goToNext}
-              className="p-2 bg-white rounded-full hover:bg-white hover:text-orange"
-            >
-              &gt;
-            </button>
           </div>
+          <button
+            onClick={goToNext}
+            className="absolute z-50 p-2 bg-white rounded-full hover:bg-white hover:text-orange"
+          >
+            &gt;
+          </button>
         </div>
       </div>
     </div>

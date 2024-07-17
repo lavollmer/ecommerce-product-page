@@ -66,7 +66,7 @@ const DesktopNav = () => {
                 style={{ width: "24px", height: "24px" }}
               />
             </div>
-            <div className="font-bold font-kumbh mt-20 ml-4 space-y-6 text-dark-grayish-blue">
+            <div className="font-bold font-kumbh mt-20 ml-4 space-y-6 text-black">
               <p>Collections</p>
               <p>Men</p>
               <p>Women</p>

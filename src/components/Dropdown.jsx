@@ -3,8 +3,8 @@ import { useState } from "react";
 import ThumbnailImageProductOne from "../assets/image-product-1-thumbnail.jpg";
 import iconTrash from "../assets/icon-delete.svg";
 
-const Dropdown = ({ count}) => {
-  const [total, setTotal] = useState(125.0 * count);
+const Dropdown = ({ cartCount}) => {
+  const [total, setTotal] = useState(125.0 * cartCount);
 
 
   return (
@@ -27,7 +27,7 @@ const Dropdown = ({ count}) => {
           </div>
           <div className="flex flex-row font-kumbhs text-md text-grayish-blue">
             <p>$125.00 X</p>
-            <p> {count}</p>
+            <p> {cartCount}</p>
             <p className="font-bold ml-2 text-black">${total}</p>
           </div>
         </div>

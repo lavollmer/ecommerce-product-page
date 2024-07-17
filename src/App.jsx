@@ -18,12 +18,13 @@ function App() {
   const handleAddToCart = (newCount) => {
     setCount(newCount);
     setTotal(125.0 * newCount);
+    setCartCount(newCount);
   };
 
   return (
     <>
       <div className="flex flex-row w-full md:hidden">
-        <MobileNav className="w-full" />
+        <MobileNav className="w-full" cartCount={cartCount} />
       </div>
       <div>
         <div className="md:hidden">
@@ -40,7 +41,7 @@ function App() {
       <div className="hidden md:block">
         <div className="flex flex-row">
           <div>
-            <DesktopNav />
+            <DesktopNav cartCount={cartCount} />
           </div>
           <div className="flex flex-row text-kumbh mt-40 ">
             <div className="flex flex-col w-full">

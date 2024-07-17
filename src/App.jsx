@@ -25,12 +25,9 @@ function App() {
       <div className="flex flex-row w-full md:hidden">
         <MobileNav className="w-full" />
       </div>
-      <div className="hidden md:block text-kumbh-800">
-        <DesktopNav />
-      </div>
       <div>
         <div className="md:hidden">
-        <MobileSneakers />
+          <MobileSneakers />
         </div>
         <div className="md:hidden">
           <Text />
@@ -40,13 +37,22 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row hidden md:block text-kumbh mt-10 md:mt-40 ">
-        <MainDesktop />
-        <div>
-          <Text />
-          <div className="flex flex-col md:flex-row items-center p-4 md:p-20 space-y-4 md:space-y-0 md:space-x-6">
-            <SneakerCounter onAddToCart={handleAddToCart} />
-            <AddToCart setCount={setCartCount} />
+      <div className="hidden md:block">
+        <div className="flex flex-row">
+          <div>
+            <DesktopNav />
+          </div>
+          <div className="flex flex-row text-kumbh mt-10 md:mt-40 ">
+            <div>
+              <MainDesktop />
+            </div>
+            <div>
+              <Text />
+              <div className="flex flex-row items-center p-4 md:p-20 space-y-4 md:space-y-0 md:space-x-6">
+                <SneakerCounter onAddToCart={handleAddToCart} />
+                <AddToCart setCount={setCartCount} />
+              </div>
+            </div>
           </div>
         </div>
       </div>

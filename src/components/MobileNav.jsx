@@ -8,20 +8,26 @@ import menu from "../assets/icon-menu.svg"; // Import menu from assets folder
 
 const DesktopNav = () => {
   const [showDropdownCart, setShowDropdownCart] = useState(false);
+  const [isNavVisible, setIsNavVisible] = useState(false);
 
   const handleCartClick = () => {
     setShowDropdownCart(!showDropdownCart);
   };
 
+  const toggleNav = () => {
+    setIsNavVisible((prevState) => !prevState);
+  };
+
   return (
     <div className="font-kumbh bg-white">
       <div className="flex flex-row w-full justify-evenly items-center">
-      <div className="mt-10 ml-10">
-        <img
+        <div className="mt-10 ml-10">
+          <img
             src={menu}
             alt="menu icon"
             className="cursor-pointer"
             style={{ width: "16px", height: "16px" }}
+            onClick={toggleNav}
           />
         </div>
         <div className="mt-10 ml-6">
@@ -41,7 +47,20 @@ const DesktopNav = () => {
             className="h-10 w-10 cursor-pointer transition-colors duration-300 border-transparent b-2 hover:border-orange-800"
           />
 
-          {showDropdownCart && <Dropdown  />}
+          {showDropdownCart && <Dropdown />}
+        </div>
+        {/* Side Navigation */}
+        <div
+          className={`fixed top-0 left-0 w-1/2 h-full text-kumbhs bg-white transform ${
+            isNavVisible ? "translate-x-0" : "-translate-x-full"
+          } transition-transform duration-300 ease-in-out`}
+        >
+          {/* Navigation links or content goes here */}
+          <p>Collections</p>
+          <p>Men</p>
+          <p>Women</p>
+          <p>About</p>
+          <p>Contact</p>
         </div>
       </div>
       <hr className="mt-10" />

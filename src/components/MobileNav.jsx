@@ -5,6 +5,7 @@ import cart from "../assets/icon-cart.svg"; // Import cart from assets folder
 import avatar from "../assets/image-avatar.png"; // Import avatar from assets folder
 import Dropdown from "./Dropdown"; // Import Dropdown component
 import menu from "../assets/icon-menu.svg"; // Import menu from assets folder
+import iconClose from "../assets/icon-close.svg";
 
 const DesktopNav = () => {
   const [showDropdownCart, setShowDropdownCart] = useState(false);
@@ -55,12 +56,21 @@ const DesktopNav = () => {
             isNavVisible ? "translate-x-0" : "-translate-x-full"
           } transition-transform duration-300 ease-in-out`}
         >
-          {/* Navigation links or content goes here */}
-          <p>Collections</p>
-          <p>Men</p>
-          <p>Women</p>
-          <p>About</p>
-          <p>Contact</p>
+          <div>
+            <img
+              src={iconClose}
+              alt="close icon"
+              className="absolute top-0 right-0 text-orange cursor-pointer z-50"
+              onClick={toggleNav}
+              style={{ width: "24px", height: "24px" }}
+            />
+            {/* Navigation links or content goes here */}
+            <p>Collections</p>
+            <p>Men</p>
+            <p>Women</p>
+            <p>About</p>
+            <p>Contact</p>
+          </div>
         </div>
       </div>
       <hr className="mt-10" />

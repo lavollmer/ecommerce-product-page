@@ -8,7 +8,7 @@ const Dropdown = ({ count}) => {
 
 
   return (
-    <div className="absolute fixed top-14 left-0 w-81 bg-white shadow-md border border-gray-100">
+    <div className="absolute fixed top-14 left-0 w-full bg-white shadow-md border border-gray-100">
       <h1 className="font-kumbhs text-dark-grayish-blue font-bold mb-4 p-2">
         Cart
       </h1>

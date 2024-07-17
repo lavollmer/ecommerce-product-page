@@ -5,7 +5,6 @@ import cart from "../assets/icon-cart.svg"; // Import cart from assets folder
 import avatar from "../assets/image-avatar.png"; // Import avatar from assets folder
 import Dropdown from "./Dropdown"; // Import Dropdown component
 
-
 const DesktopNav = () => {
   const [showDropdownCart, setShowDropdownCart] = useState(false);
 
@@ -39,7 +38,7 @@ const DesktopNav = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-row relative items-center mt-10 ml-10 w-81 space-x-6">
+        <div className="flex flex-row relative items-center mt-10 ml-10 w-64 space-x-6">
           <img
             src={cart}
             onClick={handleCartClick}
@@ -53,7 +52,7 @@ const DesktopNav = () => {
             className="h-10 w-10 cursor-pointer transition-colors duration-300 border-transparent b-2 hover:border-orange-800"
           />
 
-          {showDropdownCart && <Dropdown  />}
+          {showDropdownCart && <Dropdown />}
         </div>
       </div>
       <hr className="mt-10" />

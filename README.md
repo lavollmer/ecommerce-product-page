@@ -112,8 +112,8 @@ Resources I used to help build my project or reference:
 
 ## Author
 
-- Website - [Laura V](www.lauradeveloper.com)
-- Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Laura V](https://lauradeveloper.com/)
+- Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/lavollmer)
 - Github - [@lavollmer](https://github.com/lavollmer)
 
 
